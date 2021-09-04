@@ -1,0 +1,17 @@
+.redondo {
+    background-color: rgba(64, 83, 252, 0.87);
+    color: white
+}
+
+.row {
+    padding: 0.5em;
+}
+
+.content {
+    padding-left: 4em;
+}
+
+.cuerpo {
+    padding: 40px;
+    padding-right: 500px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemáticas para Niños</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Aprende y Diviértete con las Matemáticas</h1>
+    </header>
+    <nav class="sidenav">
+        <ul>
+            <a href="index.html">
+                <li>Inicio</li>
+            </a>
+            <a href="apreden/aprende.html">
+                <li> Aprende</li>
+            </a>
+            <a href="operacion/operacion.html">
+                <li>Operaciones</li>
+            </a>
+        </ul>
+    </nav>
+    <section>
+        <article class="content">
+
+            <div id="imagenprincipal">
+                <img src="./imge/operacionesmatemadivert.jpg" alt="niño aprendiendo a sumar" width="20%">
+            </div>
+            <div>
+                <p id="intro">Las matemáticas son diveritdas y te preparan para la vida.</p>
+                <br>
+                <p class="pespecial">Algunos estudios revelan que hay mucha gente que tiene dificultades para extraer información matemática de situaciones reales, tal vez, porque en su etapa de formación se ha dado más importancia al aprobado de un examen que a mostrar la
+                    aplicación cotidiana que tienen las matemáticas. Algunos entendidos opinan que, enfocadas convenientemente, las matemáticas pueden ser divertidas.</p>
+            </div>
+
+            <div id="demo">
+                <p>Let AJAX change this text.</p>
+                <button type="button" onclick="loadDoc()">Change Content</button>
+            </div>
+
+        </article>
+
+    </section>
+
+    <footer>
+        <p>Para más información contáctenos
+        </p>
+        <a href="mailto:lsilva@estudiantes.uci.cu?Subject=Contactar">
+           Correo Electrónico
+        </a>
+    </footer>
+
+    <script>
+        function loadDoc() {
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = function() {
+                document.getElementById("demo").innerHTML = this.responseText;
+            }
+            xhttp.open("GET", "./apreden/aprende.html");
+            xhttp.send();
+        }
+    </script>
+
+</body>
+
+</html>

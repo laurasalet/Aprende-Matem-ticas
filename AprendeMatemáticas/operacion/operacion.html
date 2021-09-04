@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matematicas para Niños</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="operaciones.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!--script src="operacion.js"></script-->
+    <script src="operacionJquery.js"></script>
+    <script src="operacion.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Aprende y Diviertete con las Matemáticas</h1>
+    </header>
+    <nav class="sidenav">
+        <ul>
+            <a href="../index.html">
+                <li>Inicio</li>
+            </a>
+            <a href="../apreden/aprende.html">
+                <li> Aprende</li>
+            </a>
+            <a href="operacion.html">
+                <li>Operaciones</li>
+            </a>
+        </ul>
+    </nav>
+    <section>
+        <article class="content">
+            <div class="content">
+                <form>
+                    <div class="row">
+                        <label>Operacion:</label>
+                        <select name="" id="operacionSelccionada">
+                        <option value="suma">Suma</option>
+                        <option value="resta">Resta</option>
+                        <option value="multiplicacion">Multiplicación</option>
+                        <option value="division">División</option>
+                    </select>
+                    </div>
+                    <div class="row">
+                        <label for="numero2">Numero 1</label>
+                        <input id="numero1" type="number" />
+                    </div>
+                    <div class="row">
+                        <label for="numero2">Numero 2</label>
+                        <input id="numero2" type="number" />
+                    </div>
+                    <div class="row">
+                        <label>resultado</label>
+                        <input id="resultado" type="number" disabled />
+                    </div>
+                    <button id="btnOperacion" type="button">Calcular_Jquery</button>
+                    <button id="btnOperacion2" onclick="operacion2()" type="button">CalcularJS</button>
+                    <button type="button" onclick="print()">Imprimir</button>
+
+                </form>
+                <div id="div1">
+                    <h2>Esto va a cambiar</h2>
+                </div>
+                <button id="btnCambio">Get External Content</button>
+
+            </div>
+
+            <div class="cuerpo">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Numero 1</th>
+                            <th>Numero 2</th>
+                            <th>Resultado</th>
+                            <th>Operacion</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbCuerpo">
+
+                    </tbody>
+                </table>
+            </div>
+
+        </article>
+    </section>
+
+    <footer>
+        <p>Para más información contáctenos
+        </p>
+        <a href="mailto:lsilva@estudiantes.uci.cu?Subject=Contactar">
+           Correo Electrónico
+        </a>
+    </footer>
+
+</body>
+
+</html>
